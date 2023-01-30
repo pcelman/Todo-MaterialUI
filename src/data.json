@@ -1,0 +1,7 @@
+[{
+    "id": 1, "task": "ir de compras", "completed": true
+}, {
+    "id": 2, "task": "jugar con Lucy", "completed": false
+}, {
+    "id": 3, "task": "estudiar estilos", "completed": false
+}]
