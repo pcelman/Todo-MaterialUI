@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# To Do app to showcase MaterialUI properties
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with react app
 
 ## Available Scripts
 
