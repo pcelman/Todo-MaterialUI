@@ -9,11 +9,11 @@ body {
 .paper {
   position: relative;
   margin: auto;
-  margin-top: 40px ;
+  margin-top: 40px;
   min-height: 600px;
   width: 60%;
   max-width: 650px;
-  min-width: 320px;
+  min-width: 420px;
 }
 
 .App .horizontal {
@@ -25,8 +25,9 @@ body {
   opacity: 0.4;
   box-shadow: 0 30px 2px #bae0b6, 0 60px 2px #bae0b6, 0 90px 2px #bae0b6,
     0 120px 2px #bae0b6, 0 150px 2px #bae0b6, 0 180px 2px #bae0b6,
-    0 210px 2px #bae0b6, 0 240px 2px #bae0b6, 0 270px 2px #bae0b6, 0 300px 2px #bae0b6, 0 330px 2px #bae0b6,
-    0 360px 2px #bae0b6, 0 390px 2px #bae0b6, 0 420px 2px #bae0b6;
+    0 210px 2px #bae0b6, 0 240px 2px #bae0b6, 0 270px 2px #bae0b6,
+    0 300px 2px #bae0b6, 0 330px 2px #bae0b6, 0 360px 2px #bae0b6,
+    0 390px 2px #bae0b6, 0 420px 2px #bae0b6;
 }
 
 .App .vertical {
@@ -94,26 +95,4 @@ body {
 
 .link a {
   color: rgb(191, 186, 186);
-}
-
-@media screen and (max-width: 480px) {
-.paper h2 {
-  margin-top: 50px;
-  font-size: 2rem;
-}
-
-.App .vertical {
-  margin-left: 45px;
-}
-
-.form {
-  margin-top: 70px;
-  margin-left: 47px;
-}
-
-.todoList {
-  margin-top: 0px;
-  margin-left: 0px;
-}
-
 }
