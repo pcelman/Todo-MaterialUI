@@ -5,12 +5,15 @@ body {
   padding: 0;
   background-color: #54796e;
 }
+
 .paper {
   position: relative;
   margin: auto;
   margin-top: 40px ;
   min-height: 600px;
   width: 60%;
+  max-width: 650px;
+  min-width: 320px;
 }
 
 .App .horizontal {
@@ -46,10 +49,12 @@ body {
   color: rgb(217, 141, 141);
   opacity: 0.8;
 }
+
 .form {
   margin-top: 70px;
   margin-left: 73px;
 }
+
 .todoItem {
   margin-left: 43px;
   display: flex;
@@ -60,15 +65,18 @@ body {
   margin-top: 10px;
   margin-left: 55px;
 }
+
 .completed {
   font-family: "Open Sans", sans-serif;
   color: rgb(72, 99, 149);
   text-decoration: line-through;
 }
+
 .simple {
   font-family: "Open Sans", sans-serif;
   color: rgb(56, 94, 165);
 }
+
 .enter-icon {
   font-size: 1.6rem;
   color: rgb(54, 197, 59);
@@ -83,9 +91,11 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 0.7rem;
 }
+
 .link a {
   color: rgb(191, 186, 186);
 }
+
 @media screen and (max-width: 480px) {
 .paper h2 {
   margin-top: 50px;
@@ -100,6 +110,7 @@ body {
   margin-top: 70px;
   margin-left: 47px;
 }
+
 .todoList {
   margin-top: 0px;
   margin-left: 0px;
