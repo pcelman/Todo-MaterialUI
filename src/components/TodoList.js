@@ -1,10 +1,11 @@
 import React from "react";
+import Box from '@mui/material/Box';
 import TodoItem from "./TodoItem";
 import "../App.css";
 
 export default function TodoList({ todos, onComplete, onDeleteItem }) {
   return (
-    <div className="todoList">
+    <Box className="todoList">
       {todos.map((todo) => (
         <TodoItem
           key={todo.id}
@@ -13,6 +14,6 @@ export default function TodoList({ todos, onComplete, onDeleteItem }) {
           onDeleteItem={onDeleteItem}
         />
       ))}
-    </div>
+    </Box>
   );
 }

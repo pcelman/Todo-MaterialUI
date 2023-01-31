@@ -2,7 +2,7 @@ import { useState } from "react";
 import TodoList from "./components/TodoList";
 import TodoForm from "./components/TodoForm";
 import "./App.css";
-import { Paper, Typography } from "@mui/material";
+import { Paper, Box } from "@mui/material";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -35,7 +35,7 @@ function App() {
   };
 
   return (
-    <main className="App">
+    <Box className="App">
       <Paper
         elevation={11}
         className="paper"
@@ -52,7 +52,7 @@ function App() {
           onDeleteItem={onDeleteItem}
         />
       </Paper>
-    </main>
+    </Box>
   );
 }
 

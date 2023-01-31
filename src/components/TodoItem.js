@@ -1,11 +1,13 @@
 import React from "react";
 import DeleteIcon from "@mui/icons-material/Delete";
+import { Box, Checkbox } from "@mui/material";
 import "../App.css";
 
 export default function TodoItem({ todo, onComplete, onDeleteItem }) {
   return (
-    <section className="todoItem">
-      <input
+    <Box className="todoItem">
+      <Checkbox
+        defaultChecked
         className="todoItem__checkbox"
         type="checkbox"
         checked={todo.completed}
@@ -15,6 +17,6 @@ export default function TodoItem({ todo, onComplete, onDeleteItem }) {
         <DeleteIcon sx={{ color: "rgb(72, 99, 149)" }} />
       </a>
       <div className={todo.completed ? "completed" : "simple"}>{todo.task}</div>
-    </section>
+    </Box>
   );
 }
