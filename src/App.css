@@ -73,3 +73,16 @@ body {
   font-size: 1.6rem;
   color: rgb(54, 197, 59);
 }
+
+.link {
+  margin-top: 30px;
+  color: rgb(184, 178, 178);
+  text-align: center;
+  justify-items: right;
+  justify-self: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
+}
+.link a {
+  color: rgb(191, 186, 186);
+}

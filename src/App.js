@@ -1,8 +1,8 @@
 import { useState } from "react";
 import TodoList from "./components/TodoList";
 import TodoForm from "./components/TodoForm";
+import { Paper, Box, Link } from "@mui/material";
 import "./App.css";
-import { Paper, Box } from "@mui/material";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -16,7 +16,7 @@ function App() {
           : { ...todo };
       })
     );
- 
+
     todos.map((todo) => {
       return todo.id === Number(id)
         ? { ...todo, completed: true }
@@ -52,6 +52,17 @@ function App() {
           onDeleteItem={onDeleteItem}
         />
       </Paper>
+      <div className="link">
+      Designed and developed by  <br />
+      <a
+        href="https://portfolio-paulacelman.vercel.app/"
+        target="_blank"
+        rel="noreferrer noopener"
+        // className="link"
+        >
+        Paula Celman
+      </a>
+        </div>
     </Box>
   );
 }
