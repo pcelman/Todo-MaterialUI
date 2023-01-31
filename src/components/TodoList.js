@@ -1,9 +1,10 @@
 import React from "react";
 import TodoItem from "./TodoItem";
+import "../App.css";
 
 export default function TodoList({ todos, onComplete, onDeleteItem }) {
   return (
-    <div>
+    <div className="todoList">
       {todos.map((todo) => (
         <TodoItem
           key={todo.id}

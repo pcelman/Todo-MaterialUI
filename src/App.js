@@ -45,7 +45,7 @@ function App() {
 
   return (
     <main className="App">
-      <Paper elevation={3} className="paper" sx={{backgroundColor: "#F7EABE", borderRadius:"130"}}
+      <Paper elevation={4} className="paper" sx={{backgroundColor: "#F7EABE", borderRadius:"30px"}}
       
       >
         {/* <Typography variant="h1" component="h2" className="typography"> */}
