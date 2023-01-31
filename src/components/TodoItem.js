@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles.css";
 import DeleteIcon from "@mui/icons-material/Delete";
 import "../App.css";
 

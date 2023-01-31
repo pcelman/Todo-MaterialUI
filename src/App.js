@@ -1,9 +1,7 @@
 import { useState } from "react";
-import data from "./data.json";
 import TodoList from "./components/TodoList";
 import TodoForm from "./components/TodoForm";
 import "./App.css";
-import { SecurityUpdateGoodSharp } from "@mui/icons-material";
 import { Paper, Typography } from "@mui/material";
 
 function App() {
@@ -39,16 +37,12 @@ function App() {
     }
   };
 
-  // const useStyles = makeStyles({
-  //   root: {
-  //     fontFamily: 'Satisfy',
-  //   },
-  // });
+ 
 
   return (
     <main className="App">
       <Paper
-        elevation={4}
+        elevation={11}
         className="paper"
         sx={{ backgroundColor: "#F7EABE", borderRadius: "30px" }}
       >
