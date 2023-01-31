@@ -86,3 +86,23 @@ body {
 .link a {
   color: rgb(191, 186, 186);
 }
+@media screen and (max-width: 480px) {
+.paper h2 {
+  margin-top: 50px;
+  font-size: 2rem;
+}
+
+.App .vertical {
+  margin-left: 45px;
+}
+
+.form {
+  margin-top: 70px;
+  margin-left: 47px;
+}
+.todoList {
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+}
