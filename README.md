@@ -1,3 +1,2 @@
-# To Do app to showcase MaterialUI properties
+# Project was created with react and styled with CSS and MaterialUI.
 
-This project was created with react and styled with MaterialUI and CSS.
