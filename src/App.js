@@ -33,8 +33,10 @@ function App() {
   };
 
   const addTodo = (newTodo) => {
-    let newItem = { id: +new Date(), task: newTodo, completed: false };
-    setTodos([...todos, newItem]);
+    if (todos.length < 10) {
+      let newItem = { id: +new Date(), task: newTodo, completed: false };
+      setTodos([...todos, newItem]);
+    }
   };
 
   // const useStyles = makeStyles({
@@ -45,25 +47,25 @@ function App() {
 
   return (
     <main className="App">
-      <Paper elevation={4} className="paper" sx={{backgroundColor: "#F7EABE", borderRadius:"30px"}}
-      
+      <Paper
+        elevation={4}
+        className="paper"
+        sx={{ backgroundColor: "#F7EABE", borderRadius: "30px" }}
       >
         {/* <Typography variant="h1" component="h2" className="typography"> */}
-  <h2>
-    my todo list
-    </h2>
-{/* </Typography> */}
+        <h2>my todo list</h2>
+        {/* </Typography> */}
         {/* <Typography variant="h3">My Todo List <Typography/> */}
-        <hr className="horizontal"/>
-        <hr className="vertical"/>
-      <div className="yellow-pad"></div>
-      <TodoForm addTodo={addTodo} />
-      <TodoList
-        todos={todos}
-        onComplete={onComplete}
-        onDeleteItem={onDeleteItem}
+        <hr className="horizontal" />
+        <hr className="vertical" />
+        <div className="yellow-pad"></div>
+        <TodoForm addTodo={addTodo} />
+        <TodoList
+          todos={todos}
+          onComplete={onComplete}
+          onDeleteItem={onDeleteItem}
         />
-        </Paper>
+      </Paper>
     </main>
   );
 }

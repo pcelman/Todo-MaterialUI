@@ -6,7 +6,7 @@ body {
   padding: 0;
 }
 .paper {
-  min-height: 450px;
+  min-height: 470px;
   width: 60%;
   margin: auto;
   margin-top: 40px;
@@ -29,16 +29,9 @@ body {
 }
 
 .App .vertical {
-  /* background-color:#DBB1B8;
-  -webkit-transform:rotate(90deg);
-  width:450px;
-  height:2.5px;
-  left:10px;
-  top: 220x;
-  border:2px; */
   position: absolute;
   opacity: 0.5;
-  height: 440px;
+  height: 460px;
   width: 2px;
   background-color: #dbb1b8;
   border-left: 1px solid #dbb1b8;
@@ -57,7 +50,7 @@ body {
 .form {
   z-index: 100;
   margin-top: 70px;
-  margin-left: 70px;
+  margin-left: 73px;
   height: 50px;
   width: 160px;
 }
@@ -70,4 +63,12 @@ body {
 .todoList {
   margin-top: 10px;
   margin-left: 55px;
+}
+.completed {
+  font-family: "Satisfy", cursive;
+  color: rgb(72, 99, 149);
+}
+.simple {
+  font-family: "Satisfy", cursive;
+  color: rgb(56, 94, 165);
 }
