@@ -9,8 +9,6 @@ function App() {
   console.log(todos);
 
   const onComplete = (id) => {
-    console.log("task id", id);
-
     setTodos(
       todos.map((todo) => {
         return todo.id === Number(id)
@@ -26,7 +24,6 @@ function App() {
     });
   };
   const onDeleteItem = (id) => {
-    console.log("delete", id);
     setTodos([...todos].filter((todo) => todo.id !== id));
   };
 
@@ -37,8 +34,6 @@ function App() {
     }
   };
 
- 
-
   return (
     <main className="App">
       <Paper
@@ -46,10 +41,7 @@ function App() {
         className="paper"
         sx={{ backgroundColor: "#F7EABE", borderRadius: "30px" }}
       >
-        {/* <Typography variant="h1" component="h2" className="typography"> */}
         <h2>my todo list</h2>
-        {/* </Typography> */}
-        {/* <Typography variant="h3">My Todo List <Typography/> */}
         <hr className="horizontal" />
         <hr className="vertical" />
         <div className="yellow-pad"></div>
