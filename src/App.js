@@ -16,7 +16,7 @@ function App() {
           : { ...todo };
       })
     );
-
+ 
     todos.map((todo) => {
       return todo.id === Number(id)
         ? { ...todo, completed: true }
