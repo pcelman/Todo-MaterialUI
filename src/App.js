@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TodoList from "./components/TodoList";
 import TodoForm from "./components/TodoForm";
-import { Paper, Box, Link } from "@mui/material";
+import { Paper, Box } from "@mui/material";
 import "./App.css";
 
 function App() {
@@ -35,16 +35,16 @@ function App() {
   };
 
   return (
-    <Box className="App">
+    <Box >
       <Paper
         elevation={11}
         className="paper"
         sx={{ backgroundColor: "#F7EABE", borderRadius: "30px" }}
       >
-        <h2>my todo list</h2>
-        <hr className="horizontal" />
-        <hr className="vertical" />
-        <div className="yellow-pad"></div>
+        <h2 className="paper__title">my todo list</h2>
+        <hr className="paper__horizontal" />
+        <hr className="paper__vertical" />
+       
         <TodoForm addTodo={addTodo} />
         <TodoList
           todos={todos}
@@ -58,7 +58,7 @@ function App() {
         href="https://portfolio-paulacelman.vercel.app/"
         target="_blank"
         rel="noreferrer noopener"
-        // className="link"
+    
         >
         Paula Celman
       </a>

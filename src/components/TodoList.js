@@ -5,7 +5,7 @@ import "../App.css";
 
 export default function TodoList({ todos, onComplete, onDeleteItem }) {
   return (
-    <Box className="todoList">
+    <Box className="todo__list">
       {todos.map((todo) => (
         <TodoItem
           key={todo.id}

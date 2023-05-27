@@ -5,10 +5,9 @@ import "../App.css";
 
 export default function TodoItem({ todo, onComplete, onDeleteItem }) {
   return (
-    <Box className="todoItem">
+    <Box className="todo__item">
       <Checkbox
         defaultChecked
-        className="todoItem__checkbox"
         type="checkbox"
         checked={todo.completed}
         onChange={() => onComplete(todo.id)}

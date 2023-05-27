@@ -16,7 +16,7 @@ body {
   min-width: 420px;
 }
 
-.App .horizontal {
+.paper__horizontal {
   position: absolute;
   top: 120px;
   height: 2px;
@@ -30,7 +30,7 @@ body {
     0 390px 2px #bae0b6, 0 420px 2px #bae0b6;
 }
 
-.App .vertical {
+.paper__vertical {
   position: absolute;
   margin-left: 70px;
   height: 590px;
@@ -39,7 +39,7 @@ body {
   opacity: 0.5;
 }
 
-.App h2 {
+.paper__title {
   position: absolute;
   z-index: 10;
   left: 30px;
@@ -56,13 +56,13 @@ body {
   margin-left: 73px;
 }
 
-.todoItem {
+.todo__item {
   margin-left: 43px;
   display: flex;
   align-items: center;
 }
 
-.todoList {
+.todo__list {
   margin-top: 10px;
   margin-left: 55px;
 }
@@ -78,11 +78,6 @@ body {
   color: rgb(56, 94, 165);
 }
 
-.enter-icon {
-  font-size: 1.6rem;
-  color: rgb(54, 197, 59);
-}
-
 .link {
   margin-top: 30px;
   color: rgb(184, 178, 178);
@@ -94,6 +89,5 @@ body {
 }
 
 .link a {
-  color: rgb(191, 186, 186);
-  margin-bottom: 20px;
+  color: inherit;
 }
